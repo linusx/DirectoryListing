@@ -1,0 +1,68 @@
+$app-font: Helvetica, Verdana, sans-serif;
+$button-background-color: #3498db;
+$button-background-color-gradient: #2980b9;
+
+$button-hover-background-color: #3cb0fd;
+$button-hover-background-color-gradient: #3498db;
+
+.container {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-family: $app-font;
+  font-size:  20px;
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+
+  a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width: 100%;
+
+    :hover {
+      background: #f6f6f6;
+    }
+  }
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.btn {
+  text-align: center;
+  background: $button-background-color;
+  background-image: -webkit-linear-gradient(top, $button-background-color, $button-background-color-gradient);
+  background-image: -moz-linear-gradient(top, $button-background-color, $button-background-color-gradient);
+  background-image: -ms-linear-gradient(top, $button-background-color, $button-background-color-gradient);
+  background-image: -o-linear-gradient(top, $button-background-color, $button-background-color-gradient);
+  background-image: linear-gradient(to bottom, $button-background-color, $button-background-color-gradient);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: $app-font;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  width: auto;
+
+  &:hover {
+    background: $button-hover-background-color;
+    background-image: -webkit-linear-gradient(top, $button-hover-background-color, $button-hover-background-color-gradient);
+    background-image: -moz-linear-gradient(top, $button-hover-background-color, $button-hover-background-color-gradient);
+    background-image: -ms-linear-gradient(top, $button-hover-background-color, $button-hover-background-color-gradient);
+    background-image: -o-linear-gradient(top, $button-hover-background-color, $button-hover-background-color-gradient);
+    background-image: linear-gradient(to bottom, $button-hover-background-color, $button-hover-background-color-gradient);
+    text-decoration: none;
+  }
+}
